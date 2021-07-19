@@ -6,6 +6,6 @@
 </ol>
 <input type="text" [(ngModel)]="username">
 <p>{{username}}</p>
-<button class="btn btn-success" [disabled] = "!isEmpty()" (click) = "clearUsername()">
+<button class="btn btn-success" [disabled] = "username === ''" (click) = "username = ''">
   Add username
 </button>
